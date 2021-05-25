@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image_gallery</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- for importing icons like stars -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- google fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+    <style>
+
+
+    </style>
+</head>
+<body>
+
+    <!-- header section  -->
+    <div class="header">
+        <div class="container">
+          <div class="navbar">
+            <div class="logo">
+              <a href="index.html">
+                <img src="https://www.freepnglogos.com/uploads/photography-logo-png/adaleigh-faith-photography-logo-adaleighfaith-deviantart-33.png" alt="" width="150px" ></a>
+            </div>
+            <nav>
+              <ul id="MenuItems">
+                <li><a href="#">Home</a></li>
+                <li><a href="#spec">Special</a></li>
+                <li><a href="#morespec">More Special</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Contact</a></li>
+                
+              </ul>
+            </nav>
+
+            <img
+              src="images/menu.png"
+              alt=""
+              class="menu-icon"
+              onclick="menutoggle()"
+            />
+          </div>
+          <div class="row">
+            <div class="col-2">
+              <h1>
+                Welcome TO THE<br />
+                WORLD of FASHION!!!!
+              </h1>
+              <p>
+                "Fashion you can buy, but style you possess. The key to style is learning who you are, which takes years. There's no how-to road map to style. It's about self expression and, above all, attitude." 
+            </p>
+              <a href="#spec" class="btn">Explore Now</a>
+            </div>
+
+
+            <div class="col-2">
+              <!-- <img src="images/image1.png" alt="" /> 
+              <img src="backk1.png"> -->
+            </div>
+
+
+          </div>
+      </div>
+    </div>
+
+    <!-- header ends  -->
+<hr size="4" color="goldenrod">
+      <div id="spec" class="class1">
+          <h2>Our Special</h2>
+      </div>
+
+      <!-- special product section  -->
+<div class="flexbox1">
+    <div class="smallbox1">
+        <div class="smallimg">
+            <img src="images/product1.png" alt="" onclick="clickme(this)">
+            <img src="images/product2.png" alt="" onclick="clickme(this)">
+            <img src="images/product3.png" alt="" onclick="clickme(this)">
+            <img src="images/product4.png" alt="" onclick="clickme(this)">
+        </div>
+        <div class="largeimg">
+            <img id="imagebox" src="images/product3.png" alt="" srcset="">
+        </div>
+    </div>
+    <div class="smallbox2">
+        <h2>BEAUTIFUL DRESS</h2>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+        </div>
+        <p class="price">Brand: Killer</p>
+        <p>Size: <select name="size">
+
+                <option value="select size">select size</option>
+                <option value="small">small</option>
+                <option value="medium">medium</option>
+                <option value="large">large</option>
+
+            </select></p>
+        <p>Quantity: <input type="text" value="1"></p>
+        <h1>Product description</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur vel quidem aperiam! Recusandae quis exercitationem molestiae? Alias quisquam, voluptatibus recusandae corporis placeat a vel dolor!</p>
+        <button type="button">
+            <i class="fa fa-shopping-cart"></i>
+            Add to cart</button>
+    </div>
+</div>
+
+   <!-- more special product section  -->
+
+<div id="morespec" class="class1">
+    <h2>Some More Specials</h2>
+</div>
+
+
+<div class="rim">
+    <div class="prd">
+        <div class="photo">
+            <img src="images/bar0.jpg" alt="" srcset="">
+            <div class="details">
+                <div class="content">  
+                    <h2>Special White Gaon</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis quos, tempore doloremque quibusdam sint voluptates ullam ab explicabo velit culpa consequuntur corrupti eveniet earum!</p>
+                    <button type="button">
+                        <i class="fa fa-shopping-cart"></i>
+                        Add to cart</button>
+                </div>
+            </div>
+         </div>
+     
+    </div>
+    <div class="prd">
+        <div class="photo">
+
+            <img src="images/bar1.jpg" alt="" srcset="">
+            <div class="details">
+                <div class="content">  
+                    <h2>Beautiful White dress</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis quos, tempore doloremque quibusdam sint voluptates ullam ab explicabo velit culpa consequuntur corrupti eveniet earum!</p>
+                    <button type="button">
+                        <i class="fa fa-shopping-cart"></i>
+                        Add to cart</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="prd">
+        <div class="photo">
+
+            <img src="images/bar10.jpg" alt="" srcset="">
+            <div class="details">
+                <div class="content">  
+                    <h2>Golden Party Wear</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis quos, tempore doloremque quibusdam sint voluptates ullam ab explicabo velit culpa consequuntur corrupti eveniet earum!</p>
+                    <button type="button">
+                        <i class="fa fa-shopping-cart"></i>
+                        Add to cart</button>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div class="prd">
+        <div class="photo">
+
+            <img src="images/bar3.jpg" alt="" srcset="">
+            <div class="details">
+                <div class="content">  
+                    <h2>Red Night Dress</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis quos, tempore doloremque quibusdam sint voluptates ullam ab explicabo velit culpa consequuntur corrupti eveniet earum!</p>
+                    <button type="button">
+                        <i class="fa fa-shopping-cart"></i>
+                        Add to cart</button>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <div class="prd">
+        <div class="photo">
+
+            <img src="images/bar11.jpg" alt="" srcset="">
+            <div class="details">
+                <div class="content">  
+                    <h2>Wedding Edition(Red)</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis quos, tempore doloremque quibusdam sint voluptates ullam ab explicabo velit culpa consequuntur corrupti eveniet earum!</p>
+                    <button type="button">
+                        <i class="fa fa-shopping-cart"></i>
+                        Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="prd">
+        <div class="photo">
+
+            <img src="images/bar12.jpg" alt="" srcset="">
+            <div class="details">
+                <div class="content">  
+                    <h2>Casual Wear(White)</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis quos, tempore doloremque quibusdam sint voluptates ullam ab explicabo velit culpa consequuntur corrupti eveniet earum!</p>
+                    <button type="button">
+                        <i class="fa fa-shopping-cart"></i>
+                        Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="prd">
+        <div class="photo">
+
+            <img src="images/bar6.jpg" alt="" srcset="">
+            <div class="details">
+                <div class="content">  
+                    <h2>Black Dress</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis quos, tempore doloremque quibusdam sint voluptates ullam ab explicabo velit culpa consequuntur corrupti eveniet earum!</p>
+                    <button type="button">
+                        <i class="fa fa-shopping-cart"></i>
+                        Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="prd">
+        <div class="photo">
+
+            <img src="images/bar7.jpg" alt="" srcset="">
+            <div class="details">
+                <div class="content">  
+                    <h2>White Dress</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis quos, tempore doloremque quibusdam sint voluptates ullam ab explicabo velit culpa consequuntur corrupti eveniet earum!</p>
+                    <button type="button">
+                        <i class="fa fa-shopping-cart"></i>
+                        Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="prd">
+        <div class="photo">
+
+            <img src="images/bar8.jpg" alt="" srcset="">
+            <div class="details">
+                <div class="content">  
+                    <h2>Green Dress</h2>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis quos, tempore doloremque quibusdam sint voluptates ullam ab explicabo velit culpa consequuntur corrupti eveniet earum!</p>
+                    <button type="button">
+                        <i class="fa fa-shopping-cart"></i>
+                        Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="centre">
+        Copyright &copy; www.Fashionstore.com All Rights Reserved
+    </div>
+</footer>
+
+        
+        <!-- JS for Toggle menu -->
+        <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px";
+      } else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+      // JS FOR IMAGES 
+
+    function clickme(smallImg) {
+
+var fullImg = document.getElementById("imagebox");
+fullImg.src = smallImg.src;
+
+}
+  </script>
+
+</body>
+</html>
